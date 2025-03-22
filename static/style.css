@@ -602,6 +602,10 @@ video {
   background-image: url(/static/bg.jpg);
 }
 
+.bg-\[url\(static\/bg\.jpg\)\] {
+  background-image: url(static/bg.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
