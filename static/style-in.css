@@ -27,3 +27,27 @@ path {
   font-weight: 400;
   font-style: italic;
 }
+
+:root {
+    --wow-distance: 70px;
+}
+.wow {
+    opacity: 0;
+    transform: translateY(var(--wow-distance));
+    animation: 1s ease-out 1 wow;
+    animation-fill-mode: forwards;
+}
+.animation-delay-500 {
+    animation-delay: 500ms;
+}
+
+@keyframes wow {
+    0% {
+        opacity: 0;
+        transform: translateY(var(--wow-distance));
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
